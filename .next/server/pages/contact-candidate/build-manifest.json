@@ -1,0 +1,17 @@
+{
+  "devFiles": [],
+  "ampDevFiles": [],
+  "polyfillFiles": [],
+  "lowPriorityFiles": [],
+  "rootMainFiles": [],
+  "pages": {
+    "/contact-candidate": [
+      "static/chunks/57100800351a501b.js",
+      "static/chunks/c0d6d93b2c93ae8f.js",
+      "static/chunks/7e6d54775b98bfc3.js",
+      "static/chunks/9b3d960a27c62424.js",
+      "static/chunks/turbopack-cbb6e8b47e7e6c4f.js"
+    ]
+  },
+  "ampFirstPages": []
+}

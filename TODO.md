@@ -1,0 +1,8 @@
+- [x] Move contents of deeply nested frontend folder (TrueHire/TrueHire/TrueHire/TrueHire/TrueHire/Truehire/truehire/pp/frontend/) to root directory
+- [x] Remove the nested TrueHire folders and any duplicate files (package.json, TODO.md, etc.)
+- [x] Standardize folder/file names to consistent "TrueHire" casing
+- [x] Update root package.json scripts to run dev directly (remove cd path)
+- [x] Run npm install in root to install dependencies and check for errors
+- [x] Run npm run build to verify no build errors
+- [x] Test the application by running npm run dev and checking in browser
+- [x] Verify all file names, folder names, and alignments are correct

@@ -1,0 +1,11 @@
+var R=require("../chunks/ssr/[turbopack]_runtime.js")("server/pages/recruiter-dashboard.js")
+R.c("server/chunks/ssr/node_modules_next_7d127130._.js")
+R.c("server/chunks/ssr/components_Header_jsx_b1d76d49._.js")
+R.c("server/chunks/ssr/node_modules_next_dist_838a9e92._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__d9ffbb87._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__7cbdeed2._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__bc67aaac._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__b4d2dafe._.js")
+R.c("server/chunks/ssr/pages__app_43455d5d.js")
+R.m(94262)
+module.exports=R.m(94262).exports
