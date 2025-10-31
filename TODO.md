@@ -1,8 +1,16 @@
-- [x] Move contents of deeply nested frontend folder (TrueHire/TrueHire/TrueHire/TrueHire/TrueHire/Truehire/truehire/pp/frontend/) to root directory
-- [x] Remove the nested TrueHire folders and any duplicate files (package.json, TODO.md, etc.)
-- [x] Standardize folder/file names to consistent "TrueHire" casing
-- [x] Update root package.json scripts to run dev directly (remove cd path)
-- [x] Run npm install in root to install dependencies and check for errors
-- [x] Run npm run build to verify no build errors
-- [x] Test the application by running npm run dev and checking in browser
-- [x] Verify all file names, folder names, and alignments are correct
+- [x] Create backend folder structure
+- [x] Set up backend package.json with dependencies (express, mysql2, jsonwebtoken, bcryptjs, nodemailer, cors, dotenv)
+- [x] Create database configuration (config/database.js)
+- [x] Create models (models/User.js, Recruiter.js, Admin.js)
+- [x] Implement authentication middleware (middleware/auth.js)
+- [x] Create auth routes (routes/auth.js) - register, login, JWT, OAuth setup
+- [x] Create user routes (routes/users.js) - profile management
+- [x] Create recruiter routes (routes/recruiters.js) - profile management
+- [x] Create admin routes (routes/admin.js) - full access to view/manage users/recruiters
+- [x] Set up email utility (utils/email.js) with Nodemailer
+- [x] Create main server.js
+- [x] Install backend dependencies
+- [x] Confirm frontend/backend separation (frontend in frontend/ folder, backend in backend/ folder)
+- [ ] Set up MySQL database (provide instructions for local/VPS setup)
+- [x] Test API endpoints (critical-path + thorough testing)
+- [x] Integrate frontend with backend APIs

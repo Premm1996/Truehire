@@ -1,0 +1,6 @@
+# Frontend and Backend separation
+frontend/
+backend/
+
+# Keep only root level files like README, TODO, etc.
+# But since frontend has its own .gitignore, this root one can be minimal
