@@ -1,0 +1,51 @@
+{
+  "name": "hireconnect-portal",
+  "version": "1.0.0",
+  "description": "A comprehensive recruitment and hiring management platform that connects employers with job candidates.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "start": "node --no-deprecation backend/server.js",
+    "start:prod": "NODE_ENV=production node --no-deprecation backend/server.js",
+    "postinstall": "patch-package",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "patch-package": "^8.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "bcrypt": "^6.0.0",
+    "chart.js": "^4.5.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "framer-motion": "^12.23.24",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.17.1",
+    "mysql2": "^3.15.3",
+    "nodemailer": "^7.0.5",
+    "pdfkit": "^0.17.1",
+    "react-chartjs-2": "^5.3.0",
+    "xlsx": "^0.18.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Premm1996/hireconnect-portal.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Premm1996/hireconnect-portal/issues"
+  },
+  "homepage": "https://github.com/Premm1996/hireconnect-portal#readme"
+}

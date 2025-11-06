@@ -1,0 +1,23 @@
+import { NextRequest, NextResponse } from 'next/server';
+
+export async function GET(request: NextRequest, { params }: { params: { id: string } }) {
+  try {
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:5000';
+    const authHeader = request.headers.get('authorization');
+    const { id } = params;
+
+    const response = await fetch(`${backendUrl}/api/admin/finance/payroll-history/${id}`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        ...(authHeader && { Authorization: authHeader })
+      }
+    });
+
+    const data = await response.json();
+    return NextResponse.json(data, { status: response.status });
+  } catch (error) {
+    console.error('Error fetching payroll history by ID:', error);
+    return NextResponse.json({ error: 'Failed to fetch payroll history' }, { status: 500 });
+  }
+}

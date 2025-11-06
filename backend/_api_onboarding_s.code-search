@@ -1,0 +1,14 @@
+# Query: /api/onboarding/s
+# ContextLines: 1
+
+2 results - 2 files
+
+backend\test-employee-api.js:
+  91      console.log('\n4️⃣ Testing Onboarding Status...');
+  92:     const onboardingResponse = await fetch(`${baseUrl}/api/onboarding/status`, {
+  93        method: 'GET',
+
+frontend\src\lib\auth.ts:
+  178  
+  179:       const response = await axios.get(`/api/onboarding/status`, {
+  180          headers: { Authorization: `Bearer ${this.getToken()}` }
