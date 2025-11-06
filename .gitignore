@@ -4,3 +4,21 @@ backend/
 
 # Keep only root level files like README, TODO, etc.
 # But since frontend has its own .gitignore, this root one can be minimal
+
+# env / secrets
+.env
+.env.*
+*.env
+**/.env
+**/.env.*
+
+# build caches
+node_modules/
+.next/
+dist/
+build/
+
+# uploads and local files
+backend/uploads/
+~/.gitconfig
+
